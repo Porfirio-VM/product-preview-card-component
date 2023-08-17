@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap');
+
+:root{
+    --dark-cyan:  158, 36%, 37%;
+    --cream: 30, 38%, 92%;
+
+    --Very-dark-blue: 212, 21%, 14%;
+    --Dark-grayish-blue: 228, 12%, 48%;
+    --White: 0, 0%, 100%;
+}
+*{
+    font-family: 'Monserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img,source{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(var(--cream));
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    margin: 1.5rem 1rem;
+    width: 658px;
+    background-color: hsl(var(--White));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.info{
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+.info h4{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: hsl(var(--Dark-grayish-blue));
+}
+.info h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: hsl(var(--Very-dark-blue));
+}
+.info p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: hsl(var(--Dark-grayish-blue));
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+}
+.price h2{
+    font-weight: 500;
+    font-family: 'Fraunces';
+    color: hsl(var(--dark-cyan));
+}
+.price span{
+    text-decoration:line-through;
+    color: hsl(var(--Dark-grayish-blue));
+}
+button{
+    cursor: pointer;
+    font-weight: 600;
+    height: 2.7rem;
+    border: none;
+    background-color: hsl(var(--dark-cyan));
+    width: 100%;
+    align-self: center;
+    color: hsl(var(--White));
+    border-radius: .5rem;
+    gap: .5rem;
+}
+button:hover{
+    background-color: rgb(10, 32, 32);
+}
